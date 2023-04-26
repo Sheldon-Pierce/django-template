@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-3xl font-bold mb-8">{{ snack.description }}</h1>
+      <h1 class="text-3xl font-bold mb-8">purchaser: {{ snack.purchaser }}</h1>
+      <h1 class="text-3xl font-bold mb-8">{{ snack.created_at }}</h1>
+    <a href="{% url 'list_view' %}" class="text-blue-500 hover:text-blue-700 underline">Home</a>
+  </div>
+{% endblock content %}
